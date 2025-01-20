@@ -65,9 +65,12 @@
   font-weight: 600;
   font-size: 1.1em;
 }
+.nav ul li :hover{
+  color: grey;
+}
 
 .nav ul li a.active {
-  color: #dfd8d8;
+  color: grey;
 }
 
 /* Hamburger Menu Styles */
