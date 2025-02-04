@@ -12,229 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* General Styles */
-* {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-/* Header Styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background-color: black;
-  color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Prevent overlap by accounting for header height */
-body {
-  padding-top: 80px; /* Adjust according to the header height */
-}
-
-header .logo {
-  font-size: 1.8em;
-  font-weight: 700;
-}
-
-/* Navigation Styles */
-.nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav ul li {
-  margin-left: 30px;
-}
-
-.nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1em;
-}
-
-.nav ul li a.active {
-  color: gray;
-}
-
-/* Hamburger Menu Styles */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger span {
-  background-color: #fff;
-  height: 4px;
-  width: 25px;
-  margin: 3px 0;
-  transition: all 0.3s ease;
-}
-
-/* Mobile Menu */
-.nav-links {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav.active .nav-links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  z-index: 1000;
-  padding: 20px 0;
-}
-
-.nav-links li {
-  text-align: center;
-  margin: 10px 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .nav ul {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .nav.active ul {
-    display: flex;
-  }
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px;
-  background: linear-gradient(to left, #000, #333);
-  color: #fff;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  overflow-y: hidden;
-}
-
-.hero h1 {
-  font-size: 3em;
-  line-height: 1.3;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.hero button {
-  padding: 10px 20px;
-  background-color: #f39c12;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.hero button:hover {
-  background-color: gray;
-}
-
-/* Scores Section Styles */
-.scores {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-  margin-top: 20px; /* Added to ensure spacing from the header */
-}
-
-.scores h2 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.scores p {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 40px;
-}
-
-.score-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.score-item {
-  padding: 20px;
-  background-color: #d9d9d9;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.score-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.score-item h3 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.stars i {
-  color: #f39c12;
-  font-size: 2em;
-  margin-right: 5px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.stars i:hover {
-  color: #e67e22;
-  transform: scale(1.3);
-}
-.logo img{
-    width: 60px;
-    height: 50px;
-}
-
-/* Animation for smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-    </style>
 </head>
 <body>
     <header class="header">
@@ -273,7 +50,7 @@ html {
                 <a href="mailto:harish.maheswaran@fssa.freshworks.com"><i class="fas fa-envelope"></i></a>
             </div>
 
-            <p class="quote">"You get what you repeat." - James Clear</p>
+            <!-- <p class="quote">"You get what you repeat." - James Clear</p> -->
         </div>
     </section>
     
@@ -297,8 +74,15 @@ html {
         </div>
     </section>
 
-    <section class="skills-section" id="Skills">
-        <h1 class="section-title">Skills</h1>
+        
+ <section class="skills-section" id="Skills">
+            <h1 class="section-title">Skills</h1>
+        
+            <!-- Scores Button -->
+            <button class="scores-bttn" onclick="toggleScores()">Scores</button>
+        
+         
+        
     
         <!-- Skills Category: Using Now -->
         <div class="skills-category">
@@ -322,7 +106,7 @@ html {
                 </div>
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Git" />
-                    <p>Git</p>
+                    <p>Github</p>
                 </div>
             </div>
         </div>
@@ -368,99 +152,18 @@ html {
                     <p>MySQL</p>
                 </div>
                 <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" />
+                    <p>Firebase</p>
+                </div>
+                <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
                     <p>Figma</p>
                 </div>
             </div>
         </div>
+    </div>
+</section>
     
-        <!-- Scores Section -->
-        <div class="skills-category">
-            <h2>My Scores:</h2>
-            <div class="score-grid">
-                <div class="score-item">
-                    <h3>HTML</h3>
-                    <p class="stars">
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                    </p>
-                </div>
-                <div class="score-item">
-                    <h3>CSS</h3>
-                    <p class="stars">
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                    </p>
-                </div>
-                <div class="score-item">
-                    <h3>JavaScript</h3>
-                    <p class="stars">
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                    </p>
-                </div>
-                <div class="score-item">
-                    <h3>SQL</h3>
-                    <p class="stars">
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                    </p>
-                </div>
-                <div class="score-item">
-                    <h3>Problem Solving <br>(Level 4)</h3>
-                    <p class="stars">
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                    </p>
-                </div>
-                <div class="score-item">
-                    <h3>Python</h3>
-                    <p class="stars">
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                    </p>
-                </div>
-                <div class="score-item">
-                    <h3>English</h3>
-                    <p class="stars">
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                    </p>
-                </div>
-                <div class="score-item">
-                    <h3>Life Skills</h3>
-                    <p class="stars">
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star animated-star"></i>
-                        <i class="fas fa-star-half-alt animated-star"></i>
-                        <i class="far fa-star animated-star"></i>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
     
 
 <section id="portfolio" class="portfolio">
@@ -554,6 +257,88 @@ html {
     });
 });
 
+function toggleScores() {
+    const panel = document.getElementById('scoresPanel');
+    panel.classList.toggle('active');
+}
+
     </script>
+
+
+  <!-- Sliding Scores Panel -->
+  <div class="scores-panel" id="scoresPanel">
+    <h2>Scores</h2>
+
+    <!-- Individual Scores -->
+    <div class="score">
+        <p>HTML & CSS :</p>
+        <div class="score-bar">
+            <div class="score-fill" style="width: 75%;">
+                <span class="score-percent">75%</span>
+            </div>
+        </div>
+    </div>
+    <div class="score">
+        <p>JavaScript :</p>
+        <div class="score-bar">
+            <div class="score-fill" style="width: 75%;">
+                <span class="score-percent">75%</span>
+            </div>
+        </div>
+    </div>
+    <div class="score">
+        <p>MySQL :</p>
+        <div class="score-bar">
+            <div class="score-fill" style="width: 75%;">
+                <span class="score-percent">75%</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="score">
+        <p>Python :</p>
+        <div class="score-bar">
+            <div class="score-fill" style="width: 90%;">
+                <span class="score-percent">90%</span>
+            </div>
+        </div>
+    </div>
+    <div class="score">
+        <p>Problem Solving : <strong>Level 4</strong></p>
+        <div class="score-bar">
+            <div class="score-fill" style="width: 75%;">
+                <span class="score-percent">75%</span>
+            </div>
+        </div>
+    </div>
+    <div class="score">
+        <p>English :</p>
+            <p class="stars">
+                <i class="fas fa-star animated-star"></i>
+                <i class="fas fa-star animated-star"></i>
+                <i class="fas fa-star animated-star"></i>
+                <i class="fas fa-star animated-star"></i>
+                <i class="far fa-star animated-star"></i>
+            </p>
+        
+    </div>
+    <div class="score">
+        <p>Life Skills :</p>      
+            <p class="stars">
+                <i class="fas fa-star animated-star"></i>
+                <i class="fas fa-star animated-star"></i>
+                <i class="fas fa-star animated-star"></i>
+                <i class="fas fa-star-half-alt animated-star"></i>
+                <i class="far fa-star animated-star"></i>
+            </p>        
+    </div>
+
+    <!-- Score Legend -->
+    <div class="score-legend">
+        <p><strong>Score Legend</strong></p>
+        <p>0 - 50% Beginner</p>
+        <p>51 - 75% Intermediate</p>
+        <p>76 - 100% Expert</p>
+    </div>
 </body>
 </html>
